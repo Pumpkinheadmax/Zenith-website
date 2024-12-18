@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zenith - Unisciti al nostro server Discord</title>
+    <!-- Aggiungi il link al foglio di stile AOS -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Collegamento al font Lexend -->
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Link al tuo CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Script per inizializzare AOS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+</head>
+
+<body>
+
+    <!-- Hero Section -->
+    <section class="hero" data-aos="fade-up">
+        <h1>Benvenuto su Zenith</h1>
+        <p>Unisciti al nostro server Discord per una community unica!</p>
+        <a href="https://discord.gg/QqrCpUBuWk" class="join-button">Unisciti Ora</a>
+    </section>
+
+    <!-- Cosa Offriamo Section -->
+    <section class="features" data-aos="fade-up">
+        <h2>Cosa Offriamo</h2>
+        <div class="features-grid">
+            <div class="feature-item" data-aos="fade-up">
+                <h3>Gioco e Competizioni</h3>
+                <p>Partecipa a competizioni settimanali con premi esclusivi!</p>
+            </div>
+            <div class="feature-item" data-aos="fade-up">
+                <h3>Eventi e Streaming</h3>
+                <p>Segui i nostri eventi di gaming e streaming ogni settimana.</p>
+            </div>
+        </div>
+        <div class="features-grid2">
+            <div class="feature-item" data-aos="fade-up">
+                <h3>Comunità Attiva</h3>
+                <p>Unisciti a una comunità amichevole e sempre disponibile.</p>
+            </div>
+            <div class="feature-item" data-aos="fade-up">
+                <h3>Supporto 24/7</h3>
+                <p>Un team dedicato pronto a supportarti in ogni momento.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" data-aos="fade-up">
+        <h2>Contattaci</h2>
+        <a href="mailto:zenithonstream@gmail.com" class="contact-button">Scrivici via Email</a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>Zenith | Unisciti alla nostra community su Discord!</p>
+    </footer>
+
+    <!-- Inizializzazione AOS -->
+    <script>
+        AOS.init({
+            duration: 1000,
+            easing: 'ease-in-out',
+            once: true
+        });
+    </script>
+
+</body>
+</html>
+
+<!-- CSS -->
+<style>
+/* Generale */
+body {
+  font-family: 'Lexend', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #6a1b9a, #8e24aa); /* Viola sfumato */
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+/* Container */
+.container {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 100px 0;
+  background: linear-gradient(135deg, #6a1b9a, #8e24aa);
+}
+
+.hero h1 {
+  font-size: 3em;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.5em;
+  margin-bottom: 30px;
+}
+
+/* Tasto Unisciti Ora con bordi arrotondati */
+.join-button {
+  background-color: #fff;
+  color: #6a1b9a;
+  padding: 15px 30px;
+  font-size: 1.2em;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 20px;
+  border-radius: 30px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.join-button:hover {
+  background-color: #8e24aa;
+  color: #fff;
+}
+
+/* Cosa Offriamo Section */
+.features {
+  background-color: #f3e5f5; /* Colore pastello */
+  padding: 50px 0;
+  text-align: center;
+}
+
+.features h2 {
+  font-size: 2.5em;
+  margin-bottom: 40px;
+}
+
+/* Griglia delle Features */
+.features-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  justify-items: center;
+  margin-bottom: 40px;
+}
+
+.feature-item {
+  background-color: #fff; /* Caselle bianche */
+  color: #000; /* Testo nero */
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 90%;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.feature-item h3 {
+  font-size: 1.8em;
+  margin-bottom: 15px;
+}
+
+.feature-item p {
+  font-size: 1.1em;
+}
+
+.feature-item[data-aos="fade-up"].aos-animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Seconda riga delle caselle (due sotto) */
+.features-grid2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  justify-items: center;
+  margin-top: 40px;
+}
+
+/* Contact Section */
+.contact {
+  background-color: #f3e5f5; /* Colore pastello */
+  text-align: center;
+  padding: 50px 0;
+}
+
+.contact h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.contact-button {
+  background-color: #6a1b9a;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  border-radius: 20px;
+}
+
+.contact-button:hover {
+  background-color: #8e24aa;
+}
+
+/* Footer */
+.footer {
+  background-color: #6a1b9a;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+</style>

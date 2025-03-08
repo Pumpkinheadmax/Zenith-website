@@ -1,48 +1,156 @@
-<p>La community dove i gamers si sentono a casa e dove la socialità e il divertimento si incontrano.</p>
-            <a href="https://discord.gg/QqrCpUBuWk" class="join-button">Unisciti a noi ora!</a>
-        </section>
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Zenith - La Community di Gamer</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* CSS */
+        body {
+            font-family: 'Lexend', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #af8fbe, #69247e);
+            color: #000000;
+            width: 100%;
+            height: 100%;
+            box-sizing: border-box;
+        }
 
-        <!-- Chi Siamo Section -->
-        <section class="features">
-            <h2>Chi Siamo</h2>
-            <div class="features-grid">
-                <div class="feature-item" data-aos="fade-up">
-                    <h3>Zenith: Una community di gamer</h3>
-                    <p>Zenith è una community di gamer e appassionati di socialità, dove ogni membro può divertirsi, fare nuove amicizie e immergersi in un’ampia varietà di giochi. Con un focus su titoli come Fortnite, Minecraft, Valorant e Marvel Rivals, il server è adatto a tutti, dai giocatori competitivi a chi cerca semplicemente un’esperienza di intrattenimento.</p>
-                </div>
-                <div class="feature-item" data-aos="fade-up">
-                    <h3>Eventi Sociali e Tornei</h3>
-                    <p>Oltre al gaming, organizziamo eventi sociali come serate film, sessioni di gioco, e tornei con premi in palio. Ogni membro può partecipare, indipendentemente dal livello di abilità, creando un ambiente inclusivo e divertente.</p>
-                </div>
-            </div>
-            <div class="features-grid2">
-                <div class="feature-item" data-aos="fade-up">
-                    <h3>Recensioni dei Membri</h3>
-                    <p>Scopri cosa dicono i nostri membri! Le recensioni di Zenith sono una testimonianza dell’impegno che mettiamo nell’offrire una community di qualità. Puoi leggere alcune recensioni su <a href="https://disboard.org/it/server/reviews/1276197488625455226" target="_blank">Disboard</a>.</p>
-                </div>
-                <div class="feature-item" data-aos="fade-up">
-                    <h3>La Nostra Visione</h3>
-                    <p>Abbiamo in programma di diventare una delle migliori community italiane di Discord. Lavoriamo ogni giorno per migliorare la nostra offerta, portando nuovi contenuti, giochi e eventi per tutti i membri.</p>
-                </div>
-            </div>
-        </section>
+        .container {
+            width: 100%;
+            padding: 20px;
+            box-sizing: border-box;
+        }
 
-        <!-- Contattaci Section -->
-        <section class="contact">
-            <h2>Contattaci</h2>
-            <p>Per qualsiasi domanda o per maggiori informazioni su come entrare nella nostra community, non esitare a contattarci.</p>
-            <a href="https://discord.gg/QqrCpUBuWk" class="contact-button">Contattaci su Discord</a>
-        </section>
+        .hero {
+            text-align: center;
+            padding: 100px 0;
+            background: linear-gradient(135deg, #986db1, #391044);
+        }
 
-        <!-- Footer Section -->
-        <footer class="footer">
-            <p>Zenith - La Community dei Gamers | <span class="quote">"Dove i gamers si sentono a casa"</span></p>
-        </footer>
+        .hero h1 {
+            font-size: 3em;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.5em;
+            margin-bottom: 30px;
+        }
+
+        .join-button {
+            background-color: #ffffff;
+            color: #461068;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            border: none;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 20px;
+            border-radius: 30px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .join-button:hover {
+            background-color: #b797c0;
+            color: #ffffff;
+        }
+
+        .features {
+            background-color: #ffffff;
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .features h2 {
+            font-size: 2.5em;
+            margin-bottom: 40px;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            justify-items: center;
+            margin-bottom: 40px;
+        }
+
+        .feature-item {
+            background-color: #ffffff;
+            color: #000000;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 90%;
+            text-align: center;
+            opacity: 0;
+            transform: translateY(50px);
+            transition: opacity 0.7s ease, transform 0.7s ease;
+        }
+
+        .feature-item h3 {
+            font-size: 1.8em;
+            margin-bottom: 15px;
+        }
+
+        .feature-item p {
+            font-size: 1.1em;
+        }
+
+        .feature-item[data-aos="fade-up"].aos-animate {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .contact {
+            background-color: #ffffff;
+            text-align: center;
+            padding: 50px 0;
+        }
+
+        .contact h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .contact-button {
+            background-color: #ffffff;
+            color: #000000;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            border: none;
+            cursor: pointer;
+            text-decoration: none;
+            border-radius: 20px;
+        }
+
+        .contact-button:hover {
+            background-color: #b797c0;
+        }
+
+        .footer {
+            background: linear-gradient(135deg, #3e0b53, #8c5899);
+            color: #ffffff;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <div class="hero">
+        <h1>Zenith</h1>
+        <p>Unisciti alla community dove il gaming e la socialità si incontrano. Giochi, amici, eventi: tutto in un unico posto!</p>
+        <a href="https://www.tiktok.com/@just_federico_?_t=ZN-8uVhKGGdVt0&_r=1" class="join-button" target="_blank">Contattaci su TikTok</a>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
-</body>
-</html>
+    <!-- Cosa Offriamo Section -->
+    <div class="features">
+        <h2>Cosa Offriamo</h2>
+        <div class="features-grid">
+            <div class="feature-item">

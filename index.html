@@ -1,195 +1,240 @@
 <!DOCTYPE html>
 <html lang="it">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Zenith - La Community dei Gamers</title>
-  <style>
-    /* Generale */
-    body {
-      font-family: 'Lexend', sans-serif;
-      margin: 0;
-      padding: 0;
-      background: linear-gradient(135deg, #af8fbe, #69247e);
-      color: #000000;
-      width: 100%;
-      height: 100%;
-      box-sizing: border-box;
-    }
-
-    /* Container */
-    .container {
-      width: 100%;
-      padding: 20px;
-      box-sizing: border-box;
-    }
-
-    /* Hero Section */
-    .hero {
-      text-align: center;
-      padding: 100px 0;
-      background: linear-gradient(135deg, #986db1, #391044);
-    }
-
-    .hero h1 {
-      font-size: 3em;
-      font-weight: 600;
-      margin-bottom: 20px;
-      color: #fff;
-    }
-
-    .hero p {
-      font-size: 1.5em;
-      margin-bottom: 30px;
-      color: #fff;
-    }
-
-    /* Tasto Unisciti Ora con bordi arrotondati */
-    .join-button {
-      background-color: #ffffff;
-      color: #461068;
-      padding: 15px 30px;
-      font-size: 1.2em;
-      border: none;
-      cursor: pointer;
-      text-decoration: none;
-      display: inline-block;
-      margin-top: 20px;
-      border-radius: 30px;
-      transition: background-color 0.3s, color 0.3s;
-    }
-
-    .join-button:hover {
-      background-color: #b797c0;
-      color: #ffffff;
-    }
-
-    /* Cosa Offriamo Section */
-    .features {
-      background-color: #ffffff;
-      padding: 50px 0;
-      text-align: center;
-    }
-
-    .features h2 {
-      font-size: 2.5em;
-      margin-bottom: 40px;
-    }
-
-    /* Griglia delle Features */
-    .features-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 20px;
-      justify-items: center;
-      margin-bottom: 40px;
-    }
-
-    .feature-item {
-      background-color: #ffffff;
-      color: #000000;
-      border-radius: 8px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      padding: 20px;
-      width: 90%;
-      text-align: center;
-      opacity: 0;
-      transform: translateY(50px);
-      transition: opacity 0.7s ease, transform 0.7s ease;
-    }
-
-    .feature-item h3 {
-      font-size: 1.8em;
-      margin-bottom: 15px;
-    }
-
-    .feature-item p {
-      font-size: 1.1em;
-    }
-
-    .feature-item[data-aos="fade-up"].aos-animate {
-      opacity: 1;
-      transform: translateY(0);
-    }
-
-    /* Footer */
-    .footer {
-      background: linear-gradient(135deg, #3e0b53, #8c5899);
-      color: #ffffff;
-      text-align: center;
-      padding: 20px;
-    }
-
-    /* Footer Links */
-    .footer a {
-      color: #fff;
-      text-decoration: none;
-      margin: 0 10px;
-    }
-
-    .footer a:hover {
-      text-decoration: underline;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zenith - Unisciti al nostro server Discord</title>
+    <!-- Aggiungi il link al foglio di stile AOS -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Collegamento al font Lexend -->
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Link al tuo CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Script per inizializzare AOS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
 </head>
 
 <body>
 
-  <div class="container">
     <!-- Hero Section -->
-    <section class="hero">
-      <h1>Benvenuto in Zenith</h1>
-      <p>La tua community di gaming e socialità, dove i giocatori si sentono a casa!</p>
-      <a href="#join" class="join-button">Unisciti Ora</a>
+    <section class="hero" data-aos="fade-up">
+        <h1>Benvenuto su Zenith</h1>
+        <p>Unisciti al nostro server Discord per una community unica e unita!</p>
+        <a href="https://discord.gg/QqrCpUBuWk" class="join-button">Unisciti adesso !</a>
     </section>
 
-    <!-- Cosa Offriamo -->
-    <section class="features">
-      <h2>Cosa Offriamo</h2>
-      <div class="features-grid">
-        <div class="feature-item" data-aos="fade-up">
-          <h3>Eventi Sociali</h3>
-          <p>Oltre ai giochi, organizziamo eventi sociali come serate film e tornei, creando un'atmosfera divertente e amichevole per tutti.</p>
+    <!-- Cosa Offriamo Section -->
+    <section class="features" data-aos="fade-up">
+        <h2>Quali servizi offriamo : </h2>
+        <div class="features-grid">
+            <div class="feature-item" data-aos="fade-up">
+                <h3>Gioco e Competizioni🎮</h3>
+                <p>Partecipa a competizioni settimanali con premi esclusivi insieme!</p>
+                <p>Ogni giorno facciamo  chiamate per divertirci tutti assieme</p>
+            </div>
+            <div class="feature-item" data-aos="fade-up">
+                <h3>Eventi e Streaming📽️</h3>
+                <p>Segui i nostri eventi di gaming e streaming ogni settimana.</p>
+                <p>Ogni settimana offriamo Eventi di qualsiasi tipo,dal gaming (di qualsiasi gioco)al vedere film. </p>
+            </div>
         </div>
-        <div class="feature-item" data-aos="fade-up">
-          <h3>Giochi Popolari</h3>
-          <p>Concentrati su giochi come Fortnite, Minecraft, Valorant e Marvel Rivals, ma aperti a qualsiasi titolo che i membri amano giocare insieme.</p>
+        <div class="features-grid2">
+            <div class="feature-item" data-aos="fade-up">
+                <h3>Comunità Attiva👤</h3>
+                <p>Unisciti a una comunità amichevole e sempre disponibile.</p>
+                <p>La nostra è una community sempre disponibile per chiaccherare o giocare!</p>
+            </div>
+            <div class="feature-item" data-aos="fade-up">
+                <h3>Supporto 24/7⌛</h3>
+                <p>Un team dedicato pronto a supportarti in ogni momento.</p> Per ogni esigenza non esitare a aprire un Ticket!
+                <p>            </div>
         </div>
-      </div>
-      <div class="features-grid">
-        <div class="feature-item" data-aos="fade-up">
-          <h3>Comunità Accogliente</h3>
-          <p>La nostra community è un mix perfetto di giocatori competitivi e appassionati di intrattenimento, con l'obiettivo di mantenere un ambiente accogliente e rispettoso.</p>
-        </div>
-        <div class="feature-item" data-aos="fade-up">
-          <h3>Premi e Tornei</h3>
-          <p>Organizziamo tornei con premi, dove i membri possono sfidarsi per dimostrare le loro abilità e vincere fantastiche ricompense.</p>
-        </div>
-      </div>
     </section>
 
-    <!-- Testimonials -->
-    <section class="testimonials">
-      <h2>Recensioni dei Membri</h2>
-      <p>Scopri cosa dicono i nostri membri sulla community!</p>
-      <a href="https://disboard.org/it/server/reviews/1276197488625455226" target="_blank">Leggi le recensioni su Disboard</a>
-    </section>
-
-    <!-- Obiettivi -->
-    <section class="goals">
-      <h2>I Nostri Obiettivi</h2>
-      <p>Abbiamo in programma di diventare una delle migliori community italiane su Discord, con l'obiettivo di offrire un'esperienza unica per tutti i nostri membri.</p>
+    <!-- Contact Section -->
+    <section class="contact" data-aos="fade-up">
+        <h2> Contattaci !</h2>
+        
+        <a href="https://discord.gg/QqrCpUBuWk" class="contact-button">Contattaci!
+        </a>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
-      <p>&copy; 2025 Zenith - Dove i gamers si sentono a casa</p>
-      <p><a href="#join">Unisciti alla nostra community!</a></p>
+        <p>Zenith  |  Server più chill  di tutta Italia!</p>
     </footer>
-  </div>
+    <footer class="footer">
+      <p>Sviluppato da PumpkinHead  ©️ - 2025
+        tutti i diritti vanno all'Owner              </p>
+    </footer>
 
+    <!-- Inizializzazione AOS -->
+    <script>
+        AOS.init({
+            duration: 1000,
+            easing: 'ease-in-out',
+            once: true
+        });
+    </script>
+     
 </body>
+</html>
 
-</html>
-</html>
+<!-- CSS -->
+<style>
+/* Generale */
+body {
+  font-family: 'Lexend', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #af8fbe, #8e24aa); /* Viola sfumato */
+  color: #000000;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+/* Container */
+.container {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 100px 0;
+  background: linear-gradient(135deg, #986db1, #391044);
+}
+
+.hero h1 {
+  font-size: 3em;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.5em;
+  margin-bottom: 30px;
+}
+
+/* Tasto Unisciti Ora con bordi arrotondati */
+.join-button {
+  background-color: #ffffff;
+  color: #461068;
+  padding: 15px 30px;
+  font-size: 1.2em;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 20px;
+  border-radius: 30px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.join-button:hover {
+  background-color: #691680;
+  color: #ffffff;
+}
+
+/* Cosa Offriamo Section */
+.features {
+  background-color: #ffffff; /* Colore pastello */
+  padding: 50px 0;
+  text-align: center;
+}
+
+.features h2 {
+  font-size: 2.5em;
+  margin-bottom: 40px;
+}
+
+/* Griglia delle Features */
+.features-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  justify-items: center;
+  margin-bottom: 40px;
+}
+
+.feature-item {
+  background-color: #ffffff; /* Caselle bianche */
+  color: #000000; /* Testo nero */
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 90%;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.feature-item h3 {
+  font-size: 1.8em;
+  margin-bottom: 15px;
+}
+
+.feature-item p {
+  font-size: 1.1em;
+}
+
+.feature-item[data-aos="fade-up"].aos-animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Seconda riga delle caselle (due sotto) */
+.features-grid2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  justify-items: center;
+  margin-top: 40px;
+}
+
+/* Contact Section */
+.contact {
+  background-color: #ffffff(0, 0%, 91%); /* Colore pastello */
+  text-align: center;
+  padding: 50px 0;
+}
+
+.contact h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.contact-button {
+ background-color: #ffffff;
+  color: #461068;
+  padding: 15px 30px;
+  font-size: 1.2em;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 20px;
+  border-radius: 30px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+
+.contact-button:hover {
+  background-color: #691680;
+color: #ffffff;
+}
+
+/* Footer */
+.footer {
+  background: linear-gradient(135deg, #3e0b53, #8c5899); /* Viola sfumato */
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+}
+
+/* BY PUMPKIN HEAD  */
+</style>
